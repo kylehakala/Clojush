@@ -1,0 +1,35 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; -*- End of report for generation 53
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+SUCCESS at generation 53
+Successful program: (boolean_yank integer_rot in1 in1 integer_max boolean_rot boolean_and boolean_swap 5 boolean_dup_times integer_div integer_lt integer_yank in2 integer_dup_times integer_min integer_stackdepth boolean_invert_second_then_and integer_min integer_gte boolean_rot integer_swap boolean_swap 5 integer_yank in2 integer_lt boolean_invert_second_then_and integer_min integer_gte integer_add integer_stackdepth boolean_invert_second_then_and integer_shove integer_div integer_stackdepth boolean_invert_second_then_and integer_shove integer_shove integer_div integer_add)
+Errors: [0N 0 0N 0N 0N 0N 0 0 0N 0 0N 0N 0]
+Total error: 0
+History: null
+Size: 42
+
+
+Auto-simplifying with starting size: 42
+step: 0
+program: (boolean_yank integer_rot in1 in1 integer_max boolean_rot boolean_and boolean_swap 5 boolean_dup_times integer_div integer_lt integer_yank in2 integer_dup_times integer_min integer_stackdepth boolean_invert_second_then_and integer_min integer_gte boolean_rot integer_swap boolean_swap 5 integer_yank in2 integer_lt boolean_invert_second_then_and integer_min integer_gte integer_add integer_stackdepth boolean_invert_second_then_and integer_shove integer_div integer_stackdepth boolean_invert_second_then_and integer_shove integer_shove integer_div integer_add)
+errors: [0N 0 0N 0N 0N 0N 0 0 0N 0 0N 0N 0]
+total: 0
+size: 42
+
+step: 500
+program: (in1 5 integer_div in2 integer_dup_times integer_min integer_stackdepth integer_gte integer_yank in2 integer_lt integer_min integer_gte integer_add integer_stackdepth integer_shove integer_div integer_stackdepth integer_shove integer_shove integer_div integer_add)
+errors: (0N 0 0N 0N 0N 0N 0 0 0N 0 0N 0N 0)
+total: 0
+size: 23
+
+step: 1000
+program: (in1 5 integer_div in2 integer_dup_times integer_gte integer_yank in2 integer_lt integer_min integer_gte integer_add integer_stackdepth integer_shove integer_div integer_stackdepth integer_shove integer_shove integer_div integer_add)
+errors: (0N 0 0N 0N 0N 0N 0 0 0N 0 0N 0N 0)
+total: 0
+size: 21
+
+;;******************************
+;; Problem-Specific Report of Simplified Solution
+
