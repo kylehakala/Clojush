@@ -2,7 +2,7 @@
 ;; an example problem for clojush, a Push/PushGP system written in Clojure
 ;; Elsa Browning, brow3924@morris.umn.edu, 2016
 ;; Kyle Hakala, hakal053@morris.umn.edu, 2016
-;; Dan Woeste,
+;; Dan Woeste, woest015@morris.umn.edu, 2016
 ;; Nic McPhee, mcphee@morris.umn.edu, 2016
 
 (ns clojush.problems.ec-ai-demos.tea-party
@@ -20,20 +20,38 @@
 ;; Taken from CodingBat: http://codingbat.com/prob/p177181
 
 (def input-set
-  [[6, 8] ;1
-   [3, 8] ;0
-   [20, 6] ;2
-   [12, 6] ;2
-   [11, 6] ;1
-   [11, 4] ;0
-   [4, 5] ;0
-   [5, 5] ;1
-   [6, 6] ;1
-   [5, 10] ;2
-   [5, 9] ;1
-   [10, 4] ;0
-   [10, 20] ;2
-   ])
+  [
+    [11, 6] ;returns 1
+    [13,5] ;returns 1
+    [33, 71] ;returns 2
+    [5, 2] ;returns 0
+    [100, 0] ;returns 0
+    [6, 8] ;returns 1
+    [6, 127] ;returns 2
+    [3, 8] ;returns 0
+    [5, 5] ;returns 1
+    [11, 4] ;returns 0
+    [20,19] ;returns 1
+    [20, 6] ;returns 2
+    [100, 43] ;returns 2
+    [10, 4] ;returns 0
+    [5, 9] ;returns 1
+    [5, 10] ;returns 2
+    [50,26] ;returns 1
+    [4, 5] ;returns 0
+    [12, 6] ;returns 2
+    [2, 4] ;returns 0
+    [21,10] ;returns 2
+    [4, 4] ;returns 0
+    [6, 6] ;returns 1
+    [20,20] ;returns 1
+    [55, 6] ;returns 2
+    [30, 62] ;returns 2
+    [55,60] ;returns 1
+    [1,3] ;returns 0
+    [0, 0] ;returns 0
+    [10, 20] ;returns 2
+    ])
 
 (defn expected-output
   [inputs]
@@ -51,7 +69,7 @@
     )
   )
 
-;(map expected-output input-set)
+;(map expected-output input-set)Untitled Document 1
 
 
 ; Make a new push state, and then add every
@@ -97,7 +115,7 @@
     ; A bunch of random numbers in case that's useful.
     ; (list (fn [] (lrand-int 100)))
     ; The three numeric constants that are specified in the problem statement
-    (list 5 2)
+    ;(list 5 2)
     ; The two inputs
     (list 'in1 'in2)
     ))
