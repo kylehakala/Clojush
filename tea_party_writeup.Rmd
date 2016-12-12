@@ -1,5 +1,5 @@
 ---
-title: "tea_party_writeup"
+title: "Tea Party"
 author: "Elsa Browning, Kyle Hakala, Dan Woeste"
 date: "December 11, 2016"
 output: pdf_document
@@ -15,12 +15,26 @@ We are having a party with amounts of tea and candy. Return the int outcome of t
 
 Taken from CodingBat: http://codingbat.com/prob/p177181
 
-## Including Plots
+##Setup
 
-You can also embed plots, for example:
+We allowed our problem to use the boolean and integer stacks. We explicitly provided the exec-if atom, as well as the items in1, in2, 5, and 2 for trials one, two, and three.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+For test cases (re, the input-set in our problem) for the first two trials, we used all of the listed cases from the original CodingBat problem. For our third and fourth trials, we added a collection of our own randomly generated input cases. These inputs were psuedo-randomly mixed up to avoid clumping/clustering (a.k.a., clumpterings). However, in our third trial, we added a case that had 1005 as an input which seemed to cause stability issues. So we changed this test case for our fourth trial.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+The expected-output funciton was first written in Java and then translated to Clojure. All test cases returned the expected output using the expected-output function. 
+
+## Results
+
+Our first trial finished rather fast over only 53 generations. However, we did not save all of this data; we ran this on the command line and realized that we should probably output to a text file after the fact. So we only saved the last generation and solution. 
+
+With speed of such apparent grace and vigor, we attempted to run a second trial which took a wonderous 470 generations. We thought that the uptick in generations may have been attributed to being "lucky" in the first trial.
+
+Our third attempt at a trial did not finish before 750 generations, so we cancelled this and reevaluated our lives. We did not save this information. It was after this trial that we changed our test case with the 1005 input hoping to find a solution.
+
+Our final trial completed after 522 generations. We believe the increase is due to removing the extra guidelines, 5 and 2.
+
+We tried to parse through the clojush instruction stack, but the resulting headache was too much for our crew to bear. So we hope that the resulting solutions are actually sound.
+
+\begin{center}
+\textbf{\textit{\newline Fin}}
+\end{center}
